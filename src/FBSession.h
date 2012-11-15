@@ -305,16 +305,15 @@ typedef void (^FBSessionReauthorizeResultHandler)(FBSession *session,
 /*! @abstract The permissions granted to the access token during the authentication flow. */
 @property(readonly, copy) NSArray *permissions;
 
-<<<<<<< HEAD
+
 /*I ADD*/
 /*! @abstract This is a custom login view */
 @property(nonatomic,strong) UIView *loginView;
 /*THIS*/
-=======
 /*! @abstract Specifies the login type used to authenticate the user. */
 @property(readonly) FBSessionLoginType loginType;
 
->>>>>>> upstream/master
+
 /*!
  @methodgroup Instance methods
  */
