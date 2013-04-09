@@ -132,17 +132,15 @@ static FBSession *g_activeSession = nil;
             affinitizedThread = _affinitizedThread,
             loginHandler = _loginHandler,
             reauthorizeHandler = _reauthorizeHandler,
-<<<<<<< HEAD
+
             reauthorizePermissions = _reauthorizePermissions;
 /*I ADD*/
-@synthesize loginView = _loginView;
+@synthesize loginView = _loginView,
 /*THIS*/
-=======
-            reauthorizePermissions = _reauthorizePermissions,
+
             lastRequestedSystemAudience = _lastRequestedSystemAudience,
             insightsState = _insightsState;
 
->>>>>>> 836cec3b1dbf74148847dcac5352c7975c6e7853
 #pragma mark Lifecycle
 
 - (id)init {

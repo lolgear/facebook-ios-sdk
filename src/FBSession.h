@@ -16,7 +16,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "FBSessionTokenCachingStrategy.h"
+//#import "FBSessionTokenCachingStrategy.h"
 #import <Accounts/Accounts.h>
 // up-front decl's
 @class FBSession;
