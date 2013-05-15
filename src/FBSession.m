@@ -851,7 +851,7 @@ static FBSession *g_activeSession = nil;
                  defaultAudience:(FBSessionDefaultAudience)defaultAudience
                   integratedAuth:(BOOL)tryIntegratedAuth
                        FBAppAuth:(BOOL)tryFBAppAuth
-                      safariAuth:(BOOL)trySafariAuth 
+                      safariAuth:(BOOL)trySafariAuth
                         fallback:(BOOL)tryFallback
                    isReauthorize:(BOOL)isReauthorize {
     // setup parameters for either the safari or inline login
@@ -892,7 +892,6 @@ static FBSession *g_activeSession = nil;
                 
         // looks like we will get to attempt a login with integrated authn
         didAuthNWithSystemAccount = YES;
-        
         [self authorizeUsingSystemAccountStore:accountStore
                                    accountType:accountTypeFB
                                    permissions:permissions
@@ -1014,7 +1013,7 @@ static FBSession *g_activeSession = nil;
             audience = ACFacebookAudienceEveryone;
             break;
         default:
-            audience = nil;
+            audience = ACFacebookAudienceFriends; /*I ADD: change from nil to DefaultAudienceFriends*/
     }
     
     // no publish_* permissions are permitted with a nil audience
